@@ -1,0 +1,352 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+
+}
+
+*::selection {
+    background-color: #0564B8;
+    color: #ffffff;
+}
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #0564B8;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.empty{
+   padding:1.5rem;
+   text-align: center;
+   border:1px solid #ddd;
+   background-color: #ffffff;
+   color:#c0392b;
+   font-size: 2rem;
+   font-family: 'Poppins', sans-serif;
+   border-radius: 5px;
+}
+
+.message{
+   position: sticky;
+   top:0;
+   margin:0 auto;
+   max-width: 1200px;
+   background-color: #f5f5f5;
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   gap:1.5rem;
+}
+
+.message span{
+   font-size: 2rem;
+   color:#242424;
+}
+
+.message i{
+   cursor: pointer;
+   color:#c0392b;
+   font-size: 2.5rem;
+}
+
+.message i:hover{
+   transform: rotate(90deg);
+}
+
+.btn,
+.delete-btn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   color:#ffffff;
+   font-size: 1.5rem;
+   border-radius: 5px;
+   text-transform: capitalize;
+   font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover,
+.delete-btn:hover{
+   background-color: #242424;
+}
+
+.btn{
+   background-color: #0564B8;
+}
+
+.delete-btn{
+   background-color: #c0392b;
+}
+
+.sidebar {
+    width: 250px; 
+    background-color: #2a2a2a;
+    color: #ffffff;
+    height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: left;
+    margin-left: 1rem; 
+    color: #D8D12F;
+    margin-bottom: .5rem; 
+}
+
+.sidebar .greet {
+    text-align: left;
+    margin-left: 1rem;
+    color: #cccccc; 
+    font-size: 1.2rem;
+    margin-bottom: 2rem; 
+}
+
+.sidebar .logo {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.sidebar ul li {
+    margin: 1rem 0; 
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; 
+}
+
+.sidebar ul li a:hover {
+    background-color: #D8D12F;
+    color: #0F0F0F;
+}
+
+.sidebar ul li.logout a:hover {
+    background-color: red; 
+}
+
+.sidebar ul li a i {
+    margin-right: 10px; 
+}
+
+.content {
+    max-width: 1200px;
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #121212;
+    box-sizing: border-box;
+}
+
+.content .title {
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center; 
+    text-align: left; 
+    gap: 1.5rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; 
+    padding-top: 2rem; 
+    align-items: flex-start;
+    font-size: 4rem; 
+    color: #ffffff;
+}
+
+.content .dashboard-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; 
+    padding-top: 2rem; 
+    align-items: flex-start;
+}
+
+.content .dashboard-box-container .box {
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: #D8D12F;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 auto;
+    min-width: 250px;
+}
+
+.content .dashboard-box-container .box h3 {
+    font-size: 3rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .dashboard-box-container .box p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #2b2b2b;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+table th {
+    background-color: #333;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #242424;
+}
+
+table tr:hover {
+    background-color: #3a3a3a;
+}
+
+.delete-btn {
+    color: #fff;
+    text-decoration: none;
+}
+
+.delete-btn i {
+    margin-right: 5px;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+}
+
+@media screen and (max-width: 768px) {
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .delete-btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table, table th, table td {
+        display: block;
+        width: 100%;
+    }
+    
+    table th {
+        text-align: left;
+        background-color: transparent;
+        border-bottom: 1px solid #444;
+    }
+    
+    table td {
+        text-align: right;
+        padding: 8px 5px;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .delete-btn {
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content form {
+        margin: 20px auto; 
+        max-width: 90%; 
+    }
+}

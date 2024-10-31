@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ingrid+Darling&family=Mochiy+Pop+One&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F0F0F;
+    color: white;
+    margin: 0;
+}
+
+.rectangle-section {
+    display: flex;
+    width: 100%;
+    max-width: 1336px;
+    height: auto;
+    background-color: #131313;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    flex-direction: row; 
+}
+
+.left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.N1 {
+    font-family: 'Mochiy Pop One', sans-serif; 
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.N2 {
+    font-family: 'Mochiy Pop One', sans-serif; 
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #D8D12F;
+}
+
+.left-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.rectangle-button {
+    padding: 20px 50px;
+    width: fit-content;
+    background-color: #D8D12F;
+    color: #0F0F0F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rectangle-button:hover {
+    background-color: #e3e361;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    position: relative;
+}
+
+.right-content .dog-main {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1; 
+}
+
+.b1, .b2 {
+    position: absolute;
+    z-index: 0; 
+}
+
+.b1 {
+    top: 20%;
+    left: 10%;
+}
+
+.b2 {
+    top: 20%;
+    right: 10%;
+}
+
+.greeting-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #0F0F0F;
+}
+
+.greeting-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mochiy Pop One', sans-serif; 
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+.greeting-heading img {
+    margin: 0 50px;
+}
+
+.greeting-heading h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.greeting-heading span {
+    color: #D8D12F;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #191919;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.box-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-family: 'Mochiy Pop One', sans-serif; 
+    margin: 10px 0;
+    font-size: 25px;
+    color: #D8D12F;
+}
+
+.box h4 {
+    font-family: 'Mochiy Pop One', sans-serif; 
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.box p {
+    font-size: 10px;
+    color: #ffffff;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.stars {
+    color: #f5c518;
+    font-size: 16px;
+}
+
+.latest-tips-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tips-news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.center-image {
+    margin-top: 20px;
+}
+
+.newsletter-container {
+    text-align: center;
+}
+
+.puppy {
+    display: block;
+    margin: 0 auto;
+}
+
+.latest-tips-news {
+    text-align: center;
+    padding: 50px 20px; 
+}
+
+.latest-tips-news h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Mochiy Pop One', sans-serif; 
+    margin-bottom: 50px;
+}
+
+.latest-tips-news span {
+    font-size: 50px;
+    color: #D8D12F;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.tips-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tip-card {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 20px); 
+    height: 100%; 
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tip-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tip-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5; 
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.about h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Mochiy Pop One', sans-serif; 
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.about span {
+    font-size: 50px;
+    color: #D8D12F;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.about-content {
+    background-color: #191919;
+    width: 100%;
+    max-width: 1232px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-content {
+    background-color: #191919;
+    width: 100%;
+    max-width: 1232px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+}
+
+.about-header h2 {
+    flex-grow: 1;
+}
+
+.about-header .paw {
+    width: 100px; 
+    height: auto;
+    margin-left: 20px; 
+}
+
+.about p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.dog-group {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.how-adoption-works {
+    background-color: #191919;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.how-adoption-works .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.how-adoption-works .left-side {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.how-adoption-works .left-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.how-adoption-works .right-side {
+    flex: 1;
+    color: white;
+}
+
+.how-adoption-works h2 {
+    font-size: 36px;
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+    margin-bottom: 20px;
+}
+
+.how-adoption-works h2 span {
+    color: #D8D12F;
+}
+
+.how-adoption-works p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.how-adoption-works ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.how-adoption-works ul li {
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.how-adoption-works ul li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #D8D12F;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.how-adoption-works .faq-btn {
+    padding: 10px 40px;
+    background-color: #D8D12F;
+    color: #0F0F0F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.how-adoption-works .faq-btn:hover {
+    background-color: #e3e361;
+}
+
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 40px;
+    }
+    .about span {
+        font-size: 40px;
+    }
+    .about p {
+        font-size: 18px;
+    }
+    
+    .greeting-heading {
+        flex-direction: row;
+    }
+
+    .box-container {
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 30%;
+    }
+
+    .how-adoption-works .container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .how-adoption-works .left-side {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .how-adoption-works .right-side {
+        margin-left: 20px;
+    }
+
+    .tip-card {
+        width: 100%;
+    }
+}

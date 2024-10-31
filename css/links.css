@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ingrid+Darling&family=Mochiy+Pop+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F0F0F;
+    color: white;
+    margin: 0;
+}
+
+.hero-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.hero-section h1 span {
+    font-size: 36px;
+    color: #D8D12F;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.hero-section p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.volunteer-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.volunteer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.volunteer-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #131313;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+}
+
+.volunteer-form h3 {
+    font-size: 24px;
+    color: #D8D12F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.volunteer-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #D8D12F;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #262626;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="tel"]::placeholder,
+.form-group textarea::placeholder {
+    color: #FFFFFF;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23d8d12f" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+}
+
+.volunteer-form .btn {
+    display: block;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: #D8D12F;
+    color: #0F0F0F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto; 
+    width: fit-content;
+}
+
+.volunteer-form .btn:hover {
+    background-color: #e3e361;
+}
+
+.faq-content-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #131313;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.faq-section {
+    padding: 20px;
+}
+
+.faq-section h1 {
+    font-size: 36px;
+    color: #D8D12F;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.faq-section h2 {
+    font-size: 1.75em;
+    color: #ffffff;
+    margin-top: 30px;
+    border-bottom: 2px solid #D8D12F;
+    padding-bottom: 5px;
+}
+
+.faq-section p {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.privacy-content-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #131313;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.privacy-about-section {
+    padding: 20px;
+}
+
+.privacy-about-section h1 {
+    font-size: 36px;
+    color: #D8D12F;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.privacy-about-section h2 {
+    font-size: 1.75em;
+    color: #ffffff;
+    margin-top: 30px;
+    border-bottom: 2px solid #D8D12F;
+    padding-bottom: 5px;
+}
+
+.privacy-about-section p, 
+.privacy-about-section ul {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.privacy-about-section ul {
+    padding-left: 20px;
+}
+
+.privacy-about-section ul li {
+    list-style-type: disc;
+}
+
+.tou-content-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #131313;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tou-about-section {
+    padding: 20px;
+}
+
+.tou-about-section h1 {
+    font-size: 36px;
+    color: #D8D12F;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.tou-about-section h2 {
+    font-size: 1.75em;
+    color: #ffffff;
+    margin-top: 30px;
+    border-bottom: 2px solid #D8D12F;
+    padding-bottom: 5px;
+}
+
+.tou-about-section p {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .volunteer-container {
+        flex-direction: column;
+    }
+
+    .volunteer-info, .volunteer-form {
+        max-width: 100%;
+    }
+
+    .tou-content-wrapper {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .tou-about-section h1 {
+        font-size: 2em;
+    }
+    
+    .tou-about-section h2 {
+        font-size: 1.5em;
+    }
+
+    .privacy-content-wrapper {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .privacy-about-section h1 {
+        font-size: 2em;
+    }
+    
+    .privacy-about-section h2 {
+        font-size: 1.5em;
+    }
+
+    .faq-content-wrapper {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .faq-section h1 {
+        font-size: 2em;
+    }
+    
+    .faq-section h2 {
+        font-size: 1.5em;
+    }
+}

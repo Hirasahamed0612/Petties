@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ingrid+Darling&family=Mochiy+Pop+One&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F0F0F;
+    color: white;
+}
+
+.adoption .container h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Mochiy Pop One', sans-serif; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.adoption .container h2 span {
+    color: #D8D12F;
+    font-family: 'Mochiy Pop One', sans-serif; 
+
+}
+.popular-breeds .container h2 span {
+    color: #D8D12F;
+    font-family: 'Mochiy Pop One', sans-serif; 
+
+}
+.popular-breeds .container h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Mochiy Pop One', sans-serif; 
+    margin-bottom: 40px;
+}
+
+.adoption .puppies, .popular-breeds .breeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.puppy {
+    background-color: #131313;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 4px 4px 25px 1px rgba(0, 0, 0, 0.3); 
+    padding-bottom: 20px;
+}
+
+.puppy img, .breed img {
+    max-width: 100%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #262626;
+    width: 1232px;
+    margin: 40px auto; 
+}
+
+.breed{
+    background-color: #131313;
+    box-shadow: 0 0 15px 0 #000000;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.puppy h3, .breed h3 {
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #D8D12F;
+}
+
+.puppy .btn {
+    padding: 10px 60px;
+    background-color: #D8D12F;
+    color: #0F0F0F;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.puppy .btn:hover{
+    background-color: #e3e361;
+}
+
+.adopt-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+ 
+.adopt-section h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.adopt-section h1 span {
+    font-size: 36px;
+    color: #D8D12F;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop One', sans-serif; 
+}
+
+.adopt-section p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+ 
+#adoption-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #131313;
+    border-radius: 5px;
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.1);
+}
+ 
+#adoption-form h2 {
+    font-size: 24px;
+    color: #D8D12F;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #D8D12F;
+    margin-bottom: 5px;
+    text-align: left;
+}
+ 
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #262626;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="tel"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+    color: #FFFFFF;
+}
+
+.form-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23d8d12f" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+ 
+#adoption-form .btn {
+    display: block;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: #D8D12F;
+    color: #0F0F0F;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto; 
+    width: fit-content;
+}
+ 
+#adoption-form .btn:hover {
+    background-color: #e3e361;
+}
+
+*::selection {
+   background-color: #3d3d3d;
+   color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+    .puppy, .breed {
+        width: 45%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-bottom: 10px; 
+        box-shadow: 3px 3px 15px 1px #000000; 
+    }
+}
+
+@media (max-width: 480px) {
+    .puppy, .breed {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 10px;
+        box-shadow: 3px 3px 15px 1px #000000; 
+    }
+
+    .puppy, .breed {
+        margin-bottom: 30px; 
+    }
+}
